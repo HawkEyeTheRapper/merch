@@ -1,15 +1,36 @@
 {
-  "name": "merch",
+  "name": "hawk-merch-rite",
   "main": ".open-next/worker.js",
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat"],
   "minify": true,
+
+  // Serve static assets from Next.js build
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+
+  // Enable observability for metrics
   "observability": {
     "enabled": true
   },
-  "upload_source_maps": true
+
+  // Upload sourcemaps for better error tracking
+  "upload_source_maps": true,
+
+  // Optional: Add environment variables here
+  "env": {
+    "hawkdev": {
+      "vars": {
+        "HAWK_MANIFEST_URL": "https://onebucket.omniversal.cloud/src/data/hawkdevnote/manifest.json",
+        "HAWK_BUCKET_PREFIX": "https://onebucket.omniversal.cloud",
+        "HAWK_TABLE_NAME": "hawkdevnotes"
+      }
+    }
+  }
+
+  // Optional: Durable Objects or KV bindings go here if needed later
+  // "durable_objects": { ... },
+  // "kv_namespaces": [ ... ]
 }
