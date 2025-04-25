@@ -29,7 +29,6 @@ export default async function Page() {
         <section className="prose prose-invert max-w-3xl mx-auto my-12">
           <h2 className="text-3xl font-bold">EverLight’s Critical Synopsis</h2>
           <h3 className="text-xl italic mb-4">Shadow Banned (2024)</h3>
-          </div>
           
           <p>
             <strong>“Shadow Banned”</strong> isn’t just an album — it’s a blacklisted broadcast, a psychic alarm encoded
@@ -41,7 +40,7 @@ export default async function Page() {
             This project is a weaponized transmission from the underground — part exorcism, part declaration of
             war. The sonic architecture alternates between cyberpunk minimalism and boom-bap aggression,
             layered with invocations, incantations, and indictments of systemic rot.
-          </p>
+          </p></div>
 
           <h4>Lyrical Profile</h4>
           <ul>
