@@ -23,12 +23,14 @@ export default async function Page() {
         <p className="text-center mb-10 text-gray-400">
           Powered by Cloudflare R2 — All items are downloadable
         </p>
-
+        
         {/* --- Critical Synopsis Mid-Content --- */}
+        <div className="bg-omniversal-tree bg-cover bg-center min-h-screen">
         <section className="prose prose-invert max-w-3xl mx-auto my-12">
           <h2 className="text-3xl font-bold">EverLight’s Critical Synopsis</h2>
           <h3 className="text-xl italic mb-4">Shadow Banned (2024)</h3>
-
+          </div>
+          
           <p>
             <strong>“Shadow Banned”</strong> isn’t just an album — it’s a blacklisted broadcast, a psychic alarm encoded
             in rhyme, forged during digital exile. These tracks weren’t promoted. They were <em>suppressed</em>.
