@@ -3,27 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+  @apply font-sans antialiased;
+}
+
+a {
+  @apply text-blue-400 hover:underline transition-all;
+}
+
+.card-grid {
+  @apply grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+}
+
+.card {
+  @apply bg-zinc-900 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all border border-zinc-800;
+}
+
+.card h3 {
+  @apply text-xl font-semibold mb-2;
+}
+
+.card p {
+  @apply text-sm text-zinc-400;
 }
 
 @layer utilities {
